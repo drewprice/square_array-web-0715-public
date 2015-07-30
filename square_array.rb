@@ -1,5 +1,3 @@
 def square_array(array)
-  new_array = []
-  array.each { |e| new_array << e**2 }
-  new_array
+  array.reduce([]) { |a, e| a << e**2  }
 end
